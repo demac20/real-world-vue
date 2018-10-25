@@ -37,5 +37,10 @@ export default {
 <style scoped>
 .notification-bar {
   margin: 1em 0 1em;
+  border-radius: 25px;
+  border: 2px solid #73ad21;
+  padding: 20px;
+  width: 400px;
+  height: 50px;
 }
 </style>
