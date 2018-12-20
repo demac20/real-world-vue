@@ -24,3 +24,8 @@ npm run test
 ```
 npm run lint
 ```
+
+### Run json-server for db.json mock api
+```
+json-server --watch db.json --host 10.10.0.150
+```

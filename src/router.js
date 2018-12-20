@@ -56,7 +56,6 @@ const router = new Router({
       path: '/network-issue',
       name: 'network-issue',
       component: NetworkIssue
-
     },
     {
       path: '*',
