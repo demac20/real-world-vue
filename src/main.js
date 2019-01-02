@@ -7,6 +7,11 @@ import upperFirst from 'lodash/upperFirst'
 import camelCase from 'lodash/camelCase'
 
 import 'nprogress/nprogress.css'
+import Vuelidate from 'vuelidate'
+
+Vue.use(Vuelidate)
+
+Vue.config.productionTip = false
 
 const requireComponent = require.context(
   './components',
@@ -23,8 +28,6 @@ requireComponent.keys().forEach(fileName => {
 
   Vue.component(componentName, componentConfig.default || componentConfig)
 })
-
-Vue.config.productionTip = false
 
 new Vue({
   router,
